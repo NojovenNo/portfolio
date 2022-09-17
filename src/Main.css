@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* NavBar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-right: 15%;
+}
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav a:active {
+  color: gray;
+}
+
+/* Baner parte 1 */
+
+.banner img {
+  height: 350px;
+  width: 100%;
+  display: block;
+}
