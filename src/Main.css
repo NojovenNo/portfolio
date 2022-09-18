@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,300&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -7,18 +9,20 @@ body {
   padding: 0;
 }
 /* NavBar */
-.nav {
+/* .nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
-}
+  background-color: transparent;
+  margin-left: 50px;
+  margin-right: 50px;
+} */
 
-nav ul {
+nav {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  margin-right: 15%;
+  display: grid;
 }
 .nav a {
   color: inherit;
@@ -35,8 +39,10 @@ nav ul {
 
 /* Baner parte 1 */
 
-.banner img {
-  height: 350px;
-  width: 100%;
-  display: block;
+.banner h3 {
+  margin-top: 50px;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 40px;
+  font-family: "Nunito Sans", sans-serif;
 }
