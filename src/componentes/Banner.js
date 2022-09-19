@@ -16,20 +16,20 @@ export default function Banner() {
         // backgroundImage: "url(${img})",
         // backgroundImage: `url(${img})`,
         backgroundColor: "lightblue",
-        height: "350px",
+        height: "300px",
         width: "100%",
       }}
     >
       <Container>
         <Row>
-          <Col md={3} xs="Auto">
+          <Col className="" md={3} xs="Auto">
             <h3>
               Maximo <br /> Espinal
             </h3>
           </Col>
           <IconContext.Provider value={{ size: "50px" }}>
             {/* <Col md={{ span: 1, offset: 3 }} xs={1}> */}
-            <Col md={{ span: 1, offset: 5 }} xs={"auto"}>
+            <Col className="mt-5" md={{ span: 1, offset: 5 }} xs={"auto"}>
               <IoIosMail />
               <IoLogoLinkedin />
               <IoLogoGithub />
