@@ -9,8 +9,8 @@ function App() {
     <div>
       <Navbar />
       <Banner />
-      {/* <AdaptMobile /> */}
       <AboutMe />
+      {/* <AdaptMobile /> */}
     </div>
   );
 }
