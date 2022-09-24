@@ -22,14 +22,19 @@ export default function Banner() {
     >
       <Container>
         <Row>
-          <Col className="" md={3} xs="auto">
+          <Col xs="auto">
             <h3>
               Maximo <br /> Espinal
             </h3>
           </Col>
-          <IconContext.Provider value={{ size: "60px" }}>
+          <IconContext.Provider value={{ size: "6vh" }}>
             {/* <Col md={{ span: 1, offset: 3 }} xs={1}> */}
-            <Col className="mt-5" md={{ span: 1, offset: 5 }} xs="auto">
+            <Col
+              className=""
+              style={{ marginTop: "1px" }}
+              md={{ span: 1, offset: 5 }}
+              xs="auto"
+            >
               <IoIosMail />
               <IoLogoLinkedin />
               <IoLogoGithub />

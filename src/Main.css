@@ -51,6 +51,7 @@ h5 {
   cursor: pointer;
   background-color: transparent;
   margin-top: 15px;
+  display: inline-flex;
 }
 
 .scroll-down::before,

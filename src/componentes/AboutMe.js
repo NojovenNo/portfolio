@@ -22,11 +22,11 @@ function AboutMe() {
         <Row>
           <Col>
             <h2 className="text-center">
-              <FaInfoCircle values={{ size: "4.5vw" }} />
+              <FaInfoCircle values={{ size: "6vh" }} />
               About me
             </h2>
             <br />
-            <h5>
+            <h5 style={{ fontSize: "3vh" }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
               voluptate consectetur atque repellat maiores, veritatis, totam
               animi eius corporis nihil temporibus. Accusamus, earum assumenda.
@@ -38,8 +38,8 @@ function AboutMe() {
               <FaInfoCircle />
               Tecnologia
             </h1>
-            <IconContext.Provider value={{ size: "60px" }}>
-              <Row>
+            <IconContext.Provider value={{ size: "6vh" }}>
+              <Row style={{ fontSize: "6vh" }}>
                 <Col xs={6} md={4}>
                   <FaHtml5 />
                   <h3>HTML</h3>
