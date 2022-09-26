@@ -19,28 +19,45 @@ function AboutMe() {
   return (
     <div>
       <Container>
-        <Row>
+        <Row style={{ marginTop: "25px" }}>
           <Col>
             <h2 className="text-center">
               <FaInfoCircle values={{ size: "6vh" }} />
               About me
             </h2>
             <br />
-            <h5 style={{ fontSize: "3vh" }}>
+            <h5 style={{ fontSize: "2vh", marginTop: "75px" }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
               voluptate consectetur atque repellat maiores, veritatis, totam
               animi eius corporis nihil temporibus. Accusamus, earum assumenda.
-              Nulla nam excepturi laudantium commodi minus!
+              Nulla nam excepturi laudantium commodi minus! Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit. Rem voluptate consectetur
+              atque repellat maiores, veritatis, totam animi eius corporis nihil
+              temporibus. Accusamus, earum assumenda. Nulla nam excepturi
+              laudantium commodi minus!
             </h5>
           </Col>
-          <Col>
+          <Col
+            style={{
+              marginLeft: "50px",
+              marginRight: "50px",
+              marginBottom: "6.7vh",
+            }}
+          >
             <h1 className="text-center">
-              <FaInfoCircle />
+              <FaInfoCircle values={{ size: "6vh" }} />
               Tecnologia
             </h1>
+            <br />
             <IconContext.Provider value={{ size: "6vh" }}>
-              <Row style={{ fontSize: "6vh" }}>
-                <Col xs={6} md={4}>
+              <Row
+                style={{
+                  fontSize: "2vh",
+                  placeItems: "center",
+                  textAlign: "center",
+                }}
+              >
+                <Col xs={6} md={4} style={{ marginTop: "25px" }}>
                   <FaHtml5 />
                   <h3>HTML</h3>
                 </Col>
@@ -52,29 +69,29 @@ function AboutMe() {
                   <FaBootstrap />
                   <h3>Bootstrap</h3>
                 </Col>
-                <Col xs={6} md={4}>
+                <Col xs={6} md={4} style={{ marginTop: "25px" }}>
                   <FaJs />
                   <h3>JavaScript</h3>
                 </Col>
                 <Col xs={6} md={4}>
-                  <FaPython />
-                  <h3>Python</h3>
+                  <FaReact />
+                  <h3>React</h3>
                 </Col>
                 <Col xs={6} md={4}>
                   <FaFigma />
                   <h3>Figma</h3>
                 </Col>
                 <Col xs={6} md={4}>
+                  <FaPython />
+                  <h3>Python</h3>
+                </Col>
+                <Col xs={6} md={4} style={{ marginTop: "25px" }}>
                   <SiMicrosoftsqlserver />
                   <h3>Microsoft SQL</h3>
                 </Col>
                 <Col xs={6} md={4}>
                   <GrMysql />
                   <h3>MySQL</h3>
-                </Col>
-                <Col xs={6} md={4}>
-                  <FaReact />
-                  <h3>React</h3>
                 </Col>
               </Row>
             </IconContext.Provider>

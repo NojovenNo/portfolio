@@ -93,8 +93,11 @@ h5 {
 .bg-scroll-down {
   background-color: red;
   overflow: hidden;
-  margin-top: 113px;
   bottom: 0;
   width: 100%;
   height: 80px;
+}
+
+a {
+  color: red;
 }

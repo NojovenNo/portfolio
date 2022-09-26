@@ -1,21 +1,27 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
+import Navbar from "./Navbar";
+import Banner from "./Banner";
+import AboutMe from "./AboutMe";
 
-export default class AdaptMobile extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { matches: window.matchMedia("(min-width: 768px)").matches };
-  }
+const App = () => {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
 
-  componentDidMount() {
-    const handler = (e) => this.setState({ matches: e.matches });
-    window.matchMedia("(min-width: 768px)").addEventListener("change", handler);
-  }
-  render() {
-    return (
-      <div>
-        {this.state.matches && <h1>Big Screen</h1>}
-        {!this.state.matches && <h3>Small Screen</h3>}
-      </div>
-    );
-  }
-}
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
+  return (
+    <div>
+      {matches && <Navbar />}
+      {matches && <Banner />}
+      {matches && <AboutMe />}
+      {!matches && <h3>Small Screen</h3>}
+    </div>
+  );
+};
+
+export default App;

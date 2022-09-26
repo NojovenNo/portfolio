@@ -16,7 +16,7 @@ export default function Banner() {
         // backgroundImage: "url(${img})",
         // backgroundImage: `url(${img})`,
         backgroundColor: "lightblue",
-        height: "500px",
+        height: "100%",
         width: "100%",
       }}
     >
@@ -27,18 +27,29 @@ export default function Banner() {
               Maximo <br /> Espinal
             </h3>
           </Col>
-          <IconContext.Provider value={{ size: "6vh" }}>
+          <IconContext.Provider value={{ size: "65px" }}>
             {/* <Col md={{ span: 1, offset: 3 }} xs={1}> */}
             <Col
               className=""
-              style={{ marginTop: "1px" }}
+              style={{
+                marginTop: "50px",
+                marginBottom: "50px",
+              }}
               md={{ span: 1, offset: 5 }}
               xs="auto"
             >
-              <IoIosMail />
-              <IoLogoLinkedin />
-              <IoLogoGithub />
-              <IoIosDocument />
+              <a href="/">
+                <IoIosMail />
+              </a>
+              <a href="/">
+                <IoLogoLinkedin />
+              </a>
+              <a href="/">
+                <IoLogoGithub />
+              </a>
+              <a href="/">
+                <IoIosDocument />
+              </a>
             </Col>
           </IconContext.Provider>
         </Row>
