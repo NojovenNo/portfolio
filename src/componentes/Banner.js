@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
+import banner from "../svg/banner.png";
 import {
   IoIosMail,
   IoLogoLinkedin,
@@ -13,27 +14,27 @@ export default function Banner() {
     <div
       className="banner"
       style={{
-        // backgroundImage: "url(${img})",
-        // backgroundImage: `url(${img})`,
-        backgroundColor: "lightblue",
-        height: "100%",
+        backgroundImage: `url(${banner})`,
+        height: "38vh",
         width: "100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
-      <Container>
+      <Container style={{ height: "125px" }}>
         <Row>
           <Col xs="auto">
             <h3>
               Maximo <br /> Espinal
             </h3>
           </Col>
-          <IconContext.Provider value={{ size: "65px" }}>
+          <IconContext.Provider value={{ size: "55px" }}>
             {/* <Col md={{ span: 1, offset: 3 }} xs={1}> */}
             <Col
               className=""
               style={{
                 marginTop: "50px",
-                marginBottom: "50px",
               }}
               md={{ span: 1, offset: 5 }}
               xs="auto"

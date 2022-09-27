@@ -26,22 +26,17 @@ function AboutMe() {
               About me
             </h2>
             <br />
-            <h5 style={{ fontSize: "2vh", marginTop: "75px" }}>
+            <h5 style={{ fontSize: "25px", marginTop: "75px" }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
               voluptate consectetur atque repellat maiores, veritatis, totam
-              animi eius corporis nihil temporibus. Accusamus, earum assumenda.
-              Nulla nam excepturi laudantium commodi minus! Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit. Rem voluptate consectetur
-              atque repellat maiores, veritatis, totam animi eius corporis nihil
-              temporibus. Accusamus, earum assumenda. Nulla nam excepturi
-              laudantium commodi minus!
+              animi eius corporis nihil temporibus.
             </h5>
           </Col>
           <Col
             style={{
               marginLeft: "50px",
               marginRight: "50px",
-              marginBottom: "6.7vh",
+              marginBottom: "4.2vh",
             }}
           >
             <h1 className="text-center">
@@ -49,7 +44,7 @@ function AboutMe() {
               Tecnologia
             </h1>
             <br />
-            <IconContext.Provider value={{ size: "6vh" }}>
+            <IconContext.Provider value={{ size: "3vh" }}>
               <Row
                 style={{
                   fontSize: "2vh",
@@ -57,7 +52,7 @@ function AboutMe() {
                   textAlign: "center",
                 }}
               >
-                <Col xs={6} md={4} style={{ marginTop: "25px" }}>
+                <Col xs={6} md={4} style={{ marginTop: "10px" }}>
                   <FaHtml5 />
                   <h3>HTML</h3>
                 </Col>
@@ -69,7 +64,7 @@ function AboutMe() {
                   <FaBootstrap />
                   <h3>Bootstrap</h3>
                 </Col>
-                <Col xs={6} md={4} style={{ marginTop: "25px" }}>
+                <Col xs={6} md={4} style={{ marginTop: "10px" }}>
                   <FaJs />
                   <h3>JavaScript</h3>
                 </Col>
@@ -85,7 +80,7 @@ function AboutMe() {
                   <FaPython />
                   <h3>Python</h3>
                 </Col>
-                <Col xs={6} md={4} style={{ marginTop: "25px" }}>
+                <Col xs={6} md={4} style={{ marginTop: "10px" }}>
                   <SiMicrosoftsqlserver />
                   <h3>Microsoft SQL</h3>
                 </Col>
@@ -99,7 +94,7 @@ function AboutMe() {
         </Row>
       </Container>
       <div className="bg-scroll-down">
-        <Link to="" spy={true} smooth={true} offset={50} duration={200}>
+        <Link to="projects" spy={true} smooth={true} offset={50} duration={200}>
           <button className="scroll-down"></button>
         </Link>
       </div>

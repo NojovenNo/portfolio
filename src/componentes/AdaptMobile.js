@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 import AboutMe from "./AboutMe";
-
 const App = () => {
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
