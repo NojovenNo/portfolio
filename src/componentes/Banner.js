@@ -38,16 +38,16 @@ export default function Banner() {
               md={{ span: 1, offset: 5 }}
               xs="auto"
             >
-              <a href="/">
+              <a href="/" style={{ color: "inherit" }}>
                 <IoIosMail />
               </a>
-              <a href="/">
+              <a href="/" style={{ color: "inherit" }}>
                 <IoLogoLinkedin />
               </a>
-              <a href="/">
+              <a href="/" style={{ color: "inherit" }}>
                 <IoLogoGithub />
               </a>
-              <a href="/">
+              <a href="/" style={{ color: "inherit" }}>
                 <IoIosDocument />
               </a>
             </Col>
