@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Banner from "./Banner";
 import AboutMe from "./AboutMe";
+import MobNavbar from "./mobile/MobNavbar";
+import MobBanner from "./mobile/MobBanner";
+import MobAboutMe from "./mobile/MobAboutMe";
 const App = () => {
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
@@ -18,7 +21,9 @@ const App = () => {
       {matches && <Navbar />}
       {matches && <Banner />}
       {matches && <AboutMe />}
-      {!matches && <h3>Small Screen</h3>}
+      {!matches && <MobNavbar />}
+      {!matches && <MobBanner />}
+      {!matches && <MobAboutMe />}
     </div>
   );
 };

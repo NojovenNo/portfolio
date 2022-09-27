@@ -1,18 +1,20 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
-import banner from "./svg/banner.png";
+import banner from "../svg/banner.png";
 import {
   IoIosMail,
   IoLogoLinkedin,
   IoLogoGithub,
   IoIosDocument,
 } from "react-icons/io";
+// import img from "../svg/Banner-Fondo.jpg";
 export default function Banner() {
   return (
     <div
       className="banner"
       style={{
+        paddingLeft: "250px",
         backgroundImage: `url(${banner})`,
         height: "38vh",
         width: "100%",
@@ -21,7 +23,7 @@ export default function Banner() {
         backgroundSize: "cover",
       }}
     >
-      <Container style={{ height: "125px" }}>
+      <Container>
         <Row>
           <Col xs="auto">
             <h3>
