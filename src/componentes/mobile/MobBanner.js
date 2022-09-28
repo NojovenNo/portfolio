@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
-import banner from "../svg/banner.png";
+import banner from "../svg/mobBanner.png";
 import {
   IoIosMail,
   IoLogoLinkedin,
@@ -14,7 +14,6 @@ export default function Banner() {
     <div
       className="banner"
       style={{
-        paddingLeft: "250px",
         backgroundImage: `url(${banner})`,
         height: "38vh",
         width: "100%",
@@ -24,37 +23,42 @@ export default function Banner() {
       }}
     >
       <Container>
-        <Row>
-          <Col xs="auto">
-            <h3>
-              Maximo <br /> Espinal
-            </h3>
-          </Col>
-          <IconContext.Provider value={{ size: "55px" }}>
-            {/* <Col md={{ span: 1, offset: 3 }} xs={1}> */}
-            <Col
-              className=""
-              style={{
-                marginTop: "50px",
-              }}
-              md={{ span: 1, offset: 5 }}
-              xs="auto"
-            >
-              <a href="/" style={{ color: "inherit" }}>
-                <IoIosMail />
-              </a>
-              <a href="/" style={{ color: "inherit" }}>
-                <IoLogoLinkedin />
-              </a>
-              <a href="/" style={{ color: "inherit" }}>
-                <IoLogoGithub />
-              </a>
-              <a href="/" style={{ color: "inherit" }}>
-                <IoIosDocument />
-              </a>
+        <IconContext.Provider
+          value={{ size: "55px", color: "rgba(0, 0, 0, 1)" }}
+        >
+          <Row className="col-sm">
+            <Col xs={10}>
+              <h3
+                style={{
+                  marginLeft: "20%",
+                }}
+              >
+                Maximo <br /> Espinal
+              </h3>
+              <Col
+                className=""
+                style={{
+                  marginLeft: "25%",
+                }}
+              >
+                <a href="/" style={{ color: "inherit" }}>
+                  <IoIosMail />
+                </a>
+                <a href="/" style={{ color: "inherit" }}>
+                  <IoLogoLinkedin />
+                </a>
+                <a href="/" style={{ color: "inherit" }}>
+                  <IoLogoGithub />
+                </a>
+                <a href="/" style={{ color: "inherit" }}>
+                  <IoIosDocument />
+                </a>
+              </Col>
             </Col>
-          </IconContext.Provider>
-        </Row>
+
+            {/* <Col md={{ span: 1, offset: 3 }} xs={1}> */}
+          </Row>
+        </IconContext.Provider>
       </Container>
     </div>
   );

@@ -30,7 +30,6 @@ body {
 
 .banner h3 {
   margin-top: 50px;
-  margin-left: 60%;
   font-weight: 700;
   text-align: justify;
   font-size: 75px;
@@ -97,4 +96,9 @@ h5 {
   bottom: 0;
   width: 100%;
   height: 100px;
+}
+
+.projects a {
+  text-decoration: none;
+  color: inherit;
 }

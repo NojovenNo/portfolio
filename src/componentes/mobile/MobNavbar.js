@@ -1,9 +1,10 @@
 import React from "react";
-// import { logoME } from "../svg/MELogo.svg";
+import { ReactComponent as LogoME } from "../svg/MELogo.svg";
 import { BiTask } from "react-icons/bi";
-import { FaMicrosoft } from "react-icons/fa";
+// import { FaMicrosoft } from "react-icons/fa";
 import { Container, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
+import { Link } from "react-scroll";
 export default function Navbar() {
   return (
     <IconContext.Provider value={{ size: "2vw" }}>
@@ -16,15 +17,22 @@ export default function Navbar() {
       >
         <Col xs="auto">
           <a href="/">
-            {/* <logoME /> */}
-            <FaMicrosoft size={50} />
+            <LogoME />
           </a>
         </Col>
 
         <Col xs="auto">
-          <a href="/">
-            <BiTask size={50} />
-          </a>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={200}
+          >
+            <a href="/">
+              <BiTask size={50} />
+            </a>
+          </Link>
         </Col>
       </Container>
     </IconContext.Provider>

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import { Link } from "react-scroll";
+import { GrTechnology } from "react-icons/gr";
 import {
   FaCss3Alt,
   FaHtml5,
@@ -40,7 +41,7 @@ function AboutMe() {
             }}
           >
             <h1 className="text-center">
-              <FaInfoCircle values={{ size: "6vh" }} />
+              <GrTechnology values={{ size: "6vh" }} />
               Tecnologia
             </h1>
             <br />
