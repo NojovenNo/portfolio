@@ -40,7 +40,7 @@ function AboutMe() {
           >
             <h1 className="text-center">
               <FaInfoCircle values={{ size: "6vh" }} />
-              Tecnologia
+              Tecnología
             </h1>
             <br />
             <IconContext.Provider value={{ size: "3vh" }}>

@@ -26,7 +26,7 @@ export default function Banner() {
         <Row>
           <Col xs="auto">
             <h3>
-              Maximo <br /> Espinal
+              Máximo <br /> Espinal
             </h3>
           </Col>
           <IconContext.Provider value={{ size: "55px" }}>

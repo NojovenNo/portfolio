@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import banner from "../svg/mobBanner.png";
+import Pdf from "../svg/CV+Spanish.pdf";
 import {
   IoIosMail,
   IoLogoLinkedin,
@@ -22,7 +23,7 @@ export default function Banner() {
         backgroundSize: "cover",
       }}
     >
-      <Container>
+      <Container className="projects">
         <IconContext.Provider
           value={{ size: "55px", color: "rgba(0, 0, 0, 1)" }}
         >
@@ -33,7 +34,7 @@ export default function Banner() {
                   marginLeft: "20%",
                 }}
               >
-                Maximo <br /> Espinal
+                Máximo <br /> Espinal
               </h3>
               <Col
                 className=""
@@ -41,16 +42,34 @@ export default function Banner() {
                   marginLeft: "25%",
                 }}
               >
-                <a href="/" style={{ color: "inherit" }}>
+                <a
+                  href="mailto:MaximoEspinalDM@gmail.com"
+                  style={{ color: "inherit" }}
+                >
                   <IoIosMail />
                 </a>
-                <a href="/" style={{ color: "inherit" }}>
+                <a
+                  href="https://www.linkedin.com/in/maximoespinaldelgado/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "inherit" }}
+                >
                   <IoLogoLinkedin />
                 </a>
-                <a href="/" style={{ color: "inherit" }}>
+                <a
+                  href="https://github.com/NojovenNo"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "inherit" }}
+                >
                   <IoLogoGithub />
                 </a>
-                <a href="/" style={{ color: "inherit" }}>
+                <a
+                  href={Pdf}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "inherit" }}
+                >
                   <IoIosDocument />
                 </a>
               </Col>
