@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IconContext } from "react-icons";
 import banner from "./svg/banner.png";
-import Pdf from "./svg/CV+Spanish.pdf";
+import Pdf from "./svg/CV+English.pdf";
 import {
   IoIosMail,
   IoLogoLinkedin,
