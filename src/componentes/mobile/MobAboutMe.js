@@ -20,15 +20,13 @@ function AboutMe() {
       <Container>
         <Row style={{ marginTop: "5px" }}>
           <Col>
-            <h2 className="text-center">
-              <FaInfoCircle values={{ size: "6vh" }} />
-              About me
+            <h2 className="text-center" style={{}}>
+              <FaInfoCircle values={{ size: "6vh" }} /> Acerca de mi
             </h2>
             <br />
             <h5 style={{ fontSize: "25px", marginTop: "5px" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-              voluptate consectetur atque repellat maiores, veritatis, totam
-              animi eius corporis nihil temporibus.
+              Soy un desarrollador de aplicaciones Desktop con mas de 2 años de
+              experiencia, desarrollador front-end y manejo de bases de datos.
             </h5>
           </Col>
           <Col
@@ -39,8 +37,7 @@ function AboutMe() {
             }}
           >
             <h1 className="text-center">
-              <FaInfoCircle values={{ size: "6vh" }} />
-              Tecnología
+              <FaInfoCircle values={{ size: "6vh" }} /> Tecnología
             </h1>
             <br />
             <IconContext.Provider value={{ size: "3vh" }}>

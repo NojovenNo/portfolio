@@ -28,8 +28,14 @@ function Projects() {
                   Librery of all characters of rick and morty serie. <br />
                   Axios and react-router-dom.
                 </Card.Text>
-                <Button variant="primary" active>
-                  <FaCode /> <a href="/"> Mirar Codigo</a>
+                <Button
+                  variant="primary"
+                  active
+                  href="https://github.com/NojovenNo/Rickandmorty"
+                  rel="noreferrer"
+                  target={"_blank"}
+                >
+                  <FaCode /> Mirar Codigo
                 </Button>{" "}
                 {/* <Button variant="secondary" active>
                   <FaDesktop /> <a href="/">Demo</a>
@@ -43,7 +49,7 @@ function Projects() {
               <Card.Img
                 variant="top"
                 src={
-                  "https://miro.medium.com/max/1400/1*qHYa7LoYK1myo_aJw_7VIA.gif"
+                  "https://user-images.githubusercontent.com/113195223/191440687-f72bc849-37aa-47ed-b7b6-f65c07756300.gif"
                 }
               />
               <Card.Body>
@@ -53,8 +59,14 @@ function Projects() {
                   <br />
                   React - Javascript - ReactScroll
                 </Card.Text>
-                <Button variant="primary" active>
-                  <FaCode /> <a href="/"> Mirar Codigo</a>
+                <Button
+                  variant="primary"
+                  active
+                  href="https://github.com/NojovenNo/personal-portfolio"
+                  rel="noreferrer"
+                  target={"_blank"}
+                >
+                  <FaCode /> Mirar Codigo
                 </Button>{" "}
                 {/* <Button variant="secondary" active>
                   <FaDesktop /> <a href="/">Demo</a>
@@ -68,7 +80,7 @@ function Projects() {
               <Card.Img
                 variant="top"
                 src={
-                  "https://miro.medium.com/max/1400/1*qHYa7LoYK1myo_aJw_7VIA.gif"
+                  "https://user-images.githubusercontent.com/113195223/192305180-f5d8da2d-e554-4eee-b72a-81d3e5e8cfa9.png"
                 }
               />
               <Card.Body>
@@ -77,8 +89,15 @@ function Projects() {
                   Point of sale for a small business. <br /> utility: invoicing,
                   inventory and management of accounts.
                 </Card.Text>
-                <Button variant="primary" active>
-                  <FaCode /> <a href="/"> Mirar Codigo</a>
+                <Button
+                  variant="primary"
+                  active
+                  href="https://github.com/NojovenNo/Punto-Venta"
+                  rel="noreferrer"
+                  target={"_blank"}
+                >
+                  <FaCode />
+                  Mirar Codigo
                 </Button>{" "}
                 {/* <Button variant="secondary" active>
                   <FaDesktop /> <a href="/">Demo</a>
@@ -102,8 +121,14 @@ function Projects() {
                   <br />
                   React - Javascript - React Router
                 </Card.Text>
-                <Button variant="primary" active>
-                  <FaCode /> <a href="/"> Mirar Codigo</a>
+                <Button
+                  variant="primary"
+                  active
+                  href="https://github.com/NojovenNo/pokeapi-pokedex"
+                  rel="noreferrer"
+                  target={"_blank"}
+                >
+                  <FaCode /> Mirar Codigo
                 </Button>{" "}
                 {/* <Button variant="secondary" active>
                   <FaDesktop /> <a href="/">Demo</a>
@@ -127,10 +152,11 @@ function Projects() {
                   the bulk of the card's content.
                 </Card.Text>
                 <Button variant="primary" active>
-                  <FaCode /> <a href="/"> Mirar Codigo</a>
+                  <FaCode />
+                  Mirar Codigo
                 </Button>{" "}
                 <Button variant="secondary" active>
-                  <FaDesktop /> <a href="/">Demo</a>
+                  <FaDesktop /> Demo
                 </Button>
               </Card.Body>
             </Card>
@@ -151,10 +177,10 @@ function Projects() {
                   the bulk of the card's content.
                 </Card.Text>
                 <Button variant="primary" active>
-                  <FaCode /> <a href="/"> Mirar Codigo</a>
+                  <FaCode /> Mirar Codigo
                 </Button>{" "}
                 <Button variant="secondary" active>
-                  <FaDesktop /> <a href="/">Demo</a>
+                  <FaDesktop /> Demo
                 </Button>
               </Card.Body>
             </Card>
